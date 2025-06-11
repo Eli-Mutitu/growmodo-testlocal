@@ -31,4 +31,36 @@ yarn-error.log*
 .yarn/
 
 # Local development
-*.local 
+*.local
+
+# WordPress core files
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/backups/
+
+# Local development
+.env.*
+*.log
+.htaccess
+
+# System files
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules
+node_modules/
+
+# Composer
+vendor/
+
+# Local by Flywheel
+app/sql/
+app/logs/ 
