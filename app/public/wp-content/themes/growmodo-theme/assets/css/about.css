@@ -1,0 +1,774 @@
+/* About Page Styles */
+.about-page {
+    background-color: #1A1A1A;
+    color: #FFF;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+/* Common Section Styles */
+section {
+    padding: 96px 0;
+    position: relative;
+}
+
+.section-star {
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/icons/star-purple.svg');
+    background-size: contain;
+    margin-bottom: 24px;
+}
+
+.section-title {
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #FFF;
+}
+
+.section-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #999999;
+    max-width: 768px;
+    margin-bottom: 48px;
+}
+
+/* Journey Section */
+.journey-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    padding: 96px 0;
+}
+
+.journey-content {
+    max-width: 580px;
+}
+
+.journey-content h1 {
+    font-size: 56px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.journey-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #999999;
+    margin-bottom: 48px;
+}
+
+.journey-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    background: #1A1A1A;
+}
+
+.stat-card {
+    padding: 24px;
+    background: #262626;
+    border-radius: 12px;
+}
+
+.stat-card .number {
+    font-size: 48px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.stat-card .label {
+    font-size: 16px;
+    color: #999999;
+}
+
+.journey-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #262626;
+}
+
+.journey-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Star decoration */
+.star-decoration {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.star-decoration svg {
+    width: 48px;
+    height: 48px;
+    color: #8B5CF6;
+}
+
+/* Values Section */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.value-card {
+    background-color: #262626;
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+}
+
+.value-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #1A1A1A;
+    margin-bottom: 8px;
+}
+
+.value-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.value-card p {
+    font-size: 16px;
+    color: #999;
+    line-height: 1.5;
+}
+
+/* Achievements Section */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.achievement-card {
+    background-color: #262626;
+    padding: 32px;
+    border-radius: 12px;
+}
+
+.achievement-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+.achievement-card p {
+    font-size: 16px;
+    color: #999;
+    line-height: 1.5;
+}
+
+/* Experience Section */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.experience-card {
+    background-color: #262626;
+    padding: 32px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.step-label {
+    font-size: 16px;
+    color: #703BF7;
+    margin-bottom: 16px;
+}
+
+.experience-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+.experience-card p {
+    font-size: 16px;
+    color: #999;
+    line-height: 1.5;
+}
+
+/* Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.team-card {
+    background-color: #262626;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.member-image {
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 24px;
+}
+
+.member-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFF;
+    margin-bottom: 8px;
+}
+
+.member-info p {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 24px;
+}
+
+.member-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.view-profile {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 24px;
+    background-color: #1A1A1A;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.view-profile:hover {
+    background-color: #333;
+}
+
+.contact-btn {
+    width: 48px;
+    height: 48px;
+    background-color: #1A1A1A;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: url('../images/icons/contact.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #333;
+}
+
+/* Clients Section */
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.client-card {
+    background-color: #262626;
+    padding: 32px;
+    border-radius: 12px;
+}
+
+.client-header {
+    margin-bottom: 24px;
+}
+
+.client-header h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFF;
+    margin-bottom: 8px;
+}
+
+.client-category {
+    font-size: 16px;
+    color: #999;
+}
+
+.client-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.client-rating span {
+    font-size: 16px;
+    color: #999;
+}
+
+.rating-stars {
+    color: #FFB800;
+    font-size: 20px;
+}
+
+.client-testimonial {
+    font-size: 16px;
+    color: #999;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.full-details-btn {
+    color: #703BF7;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-count {
+    font-size: 16px;
+    color: #999;
+}
+
+.slider-arrows {
+    display: flex;
+    gap: 12px;
+}
+
+.prev-arrow,
+.next-arrow {
+    width: 48px;
+    height: 48px;
+    background-color: #262626;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.prev-arrow {
+    background-image: url('../images/icons/arrow-left.svg');
+}
+
+.next-arrow {
+    background-image: url('../images/icons/arrow-right.svg');
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+    background-color: #333;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 96px 0;
+}
+
+.cta-section .section-title {
+    margin-bottom: 24px;
+}
+
+.cta-section .section-description {
+    margin: 0 auto 48px;
+}
+
+.explore-properties-btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: #703BF7;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-properties-btn:hover {
+    background-color: #8655F9;
+}
+
+/* Typography */
+h1 {
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+/* Section Spacing */
+.section {
+    padding: 96px 0;
+}
+
+/* Stats */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    margin-top: 48px;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #999999;
+}
+
+/* Testimonials Section */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.testimonial-card {
+    background-color: #262626;
+    padding: 32px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.client-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.client-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-details h4 {
+    font-size: 20px;
+    margin-bottom: 4px;
+    color: #FFFFFF;
+}
+
+.client-details p {
+    font-size: 16px;
+    color: #999999;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #CCCCCC;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .section-title {
+        font-size: 48px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+
+    .journey-section {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .journey-content {
+        max-width: 100%;
+    }
+
+    .journey-image {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .journey-content {
+        flex-direction: column;
+    }
+
+    .stats-container {
+        width: 100%;
+    }
+
+    .values-grid,
+    .achievements-grid,
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .values-grid,
+    .achievements-grid,
+    .experience-grid,
+    .team-grid,
+    .clients-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slider-controls {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section {
+        padding: 64px 0;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-stats {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .journey-content h1 {
+        font-size: 40px;
+    }
+
+    .journey-image {
+        min-height: 300px;
+    }
+}
+
+.about-header {
+    background-color: #1A1A1A;
+    padding: 96px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-header .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.header-content {
+    max-width: 580px;
+}
+
+.star-icon {
+    margin-bottom: 24px;
+}
+
+.star-icon svg {
+    width: 48px;
+    height: 48px;
+    color: #8B5CF6;
+}
+
+.header-content h1 {
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.header-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #999999;
+    margin-bottom: 48px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.stat-box {
+    background: #262626;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #999999;
+}
+
+.header-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #262626;
+}
+
+.header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .about-header .container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .header-content {
+        max-width: 100%;
+    }
+
+    .header-content h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-header {
+        padding: 64px 0;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .header-content h1 {
+        font-size: 40px;
+    }
+
+    .header-image {
+        min-height: 300px;
+    }
+} 
